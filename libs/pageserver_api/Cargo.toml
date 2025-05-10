@@ -1,0 +1,42 @@
+[package]
+name = "pageserver_api"
+version = "0.1.0"
+edition = "2024"
+license.workspace = true
+
+[features]
+# See pageserver/Cargo.toml
+testing = ["dep:nix"]
+
+[dependencies]
+serde.workspace = true
+serde_with.workspace = true
+serde_json.workspace = true
+const_format.workspace = true
+anyhow.workspace = true
+bytes.workspace = true
+byteorder.workspace = true
+utils.workspace = true
+postgres_ffi.workspace = true
+enum-map.workspace = true
+strum.workspace = true
+strum_macros.workspace = true
+hex.workspace = true
+humantime.workspace = true
+thiserror.workspace = true
+humantime-serde.workspace = true
+chrono = { workspace = true, features = ["serde"] }
+itertools.workspace = true
+storage_broker.workspace = true
+camino = {workspace = true, features = ["serde1"]}
+remote_storage.workspace = true
+postgres_backend.workspace = true
+nix = {workspace = true, optional = true}
+reqwest.workspace = true
+rand.workspace = true
+tracing-utils.workspace = true
+once_cell.workspace = true
+
+[dev-dependencies]
+bincode.workspace = true
+rand.workspace = true

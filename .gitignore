@@ -1,0 +1,100 @@
+/artifact_cache
+/pg_install
+/target
+/tmp_check
+/tmp_check_cli
+__pycache__/
+test_output/
+.vscode
+.idea
+*.swp
+tags
+neon.iml
+/.neon
+/integration_tests/.neon
+compaction-suite-results.*
+
+# Coverage
+*.profraw
+*.profdata
+
+*.key
+*.crt
+*.o
+*.so
+*.Po
+
+# pgindent typedef lists
+*.list
+
+# Node.js dependencies
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs
+*.log
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local PostgreSQL data
+pg_data/
+
+# Build and cache directories
+.cache/
+.vite/
+
+# Neon specific
+.cursor/
+**/timelines/**/ephemeral-*
+# Exclude large timeline binary files
+**/timelines/**/*-v1-*
+**/timelines/**/*.bin
+**/timelines/**/__*
+
+# Debug files
+coverage/
+*.lcov
+.nyc_output/
+
+# Docker related
+.docker/
+docker-volumes/
+
+# Temp files
+tmp/
+temp/
+
+# Rust build artifacts
+**/*.rs.bk
+Cargo.lock

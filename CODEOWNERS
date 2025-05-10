@@ -1,0 +1,29 @@
+# Autoscaling
+/libs/vm_monitor/ @neondatabase/autoscaling
+
+# DevProd & PerfCorr
+/.github/ @neondatabase/developer-productivity @neondatabase/performance-correctness
+
+# Compute
+/pgxn/ @neondatabase/compute
+/vendor/ @neondatabase/compute
+/compute/ @neondatabase/compute
+/compute_tools/ @neondatabase/compute
+
+# Proxy
+/libs/proxy/ @neondatabase/proxy
+/proxy/ @neondatabase/proxy
+
+# Storage
+/pageserver/ @neondatabase/storage
+/safekeeper/ @neondatabase/storage
+/storage_controller @neondatabase/storage
+/storage_scrubber @neondatabase/storage
+/libs/pageserver_api/ @neondatabase/storage
+/libs/remote_storage/ @neondatabase/storage
+/libs/safekeeper_api/ @neondatabase/storage
+
+# Shared
+/pgxn/neon/ @neondatabase/compute @neondatabase/storage
+/libs/compute_api/ @neondatabase/compute @neondatabase/control-plane
+/libs/postgres_ffi/ @neondatabase/compute @neondatabase/storage

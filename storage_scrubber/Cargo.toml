@@ -1,0 +1,43 @@
+[package]
+name = "storage_scrubber"
+version = "0.1.0"
+edition = "2024"
+license.workspace = true
+
+[dependencies]
+either.workspace = true
+anyhow.workspace = true
+hex.workspace = true
+humantime.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+workspace_hack.workspace = true
+utils.workspace = true
+async-stream.workspace = true
+tokio-postgres-rustls.workspace = true
+postgres_ffi.workspace = true
+tokio-stream.workspace = true
+tokio-postgres.workspace = true
+tokio-util = { workspace = true }
+futures-util.workspace = true
+itertools.workspace = true
+camino.workspace = true
+rustls.workspace = true
+rustls-native-certs.workspace = true
+once_cell.workspace = true
+storage_controller_client.workspace = true
+
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
+chrono = { workspace = true, default-features = false, features = ["clock", "serde"] }
+reqwest = { workspace = true, default-features = false, features = ["rustls-tls", "json"] }
+
+pageserver = { path = "../pageserver" }
+pageserver_api = { path = "../libs/pageserver_api" }
+remote_storage = { path = "../libs/remote_storage" }
+
+tracing.workspace = true
+tracing-subscriber.workspace = true
+clap.workspace = true
+tracing-appender = "0.2"
+
+futures.workspace = true
