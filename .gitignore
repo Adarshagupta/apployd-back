@@ -98,3 +98,83 @@ temp/
 # Rust build artifacts
 **/*.rs.bk
 Cargo.lock
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs and coverage
+logs
+*.log
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+coverage/
+*.lcov
+.nyc_output/
+*.profraw
+*.profdata
+
+# Environment files
+.env
+.env.*
+
+# Build and cache directories
+.cache/
+.vite/
+
+# Neon specific
+.cursor/
+**/timelines/**/ephemeral-*
+**/timelines/**/*-v1-*
+**/timelines/**/*.bin
+**/timelines/**/__*
+
+# Docker related
+.docker/
+docker-volumes/
+
+# Local PostgreSQL data
+pg_data/
+
+# Temp files and test output
+tmp/
+temp/
+test_output/
+
+# Miscellaneous
+/artifact_cache
+/pg_install
+/tmp_check
+/tmp_check_cli
+compaction-suite-results.*
+neon.iml
+/.neon
+/integration_tests/.neon
+
+# Project-specific
+build/
+build_tools/patches/
+
+# Remove duplicate or unnecessary patterns
+# (No duplicates remain)
