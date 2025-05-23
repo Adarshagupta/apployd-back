@@ -52,6 +52,7 @@ RUN set -e \
 FROM $REPOSITORY/$IMAGE:$TAG AS plan
 WORKDIR /home/nonroot
 
+
 COPY --chown=nonroot . .
 
 RUN cargo chef prepare --recipe-path recipe.json
